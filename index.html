@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+</head>
+
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav">
+      <a href="#hero" class="brand">Go Eunse</a>
+      <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#branding">Brand</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="./assets/video/main.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-inner">
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#branding">View Work</a>
+          <a class="btn btn-secondary" href="#about">About Me</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">Scroll</div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal reveal-scale">
+          <div>
+            <!-- <span class="eyebrow">이력과 기능을 함께 보여주는 소개 섹션</span> -->
+            <h2>About Me</h2>
+          </div>
+          <!-- <p>
+            단순한 자기소개가 아니라, 경력·작업 방향·도구 역량을 동시에 보여줄 수 있도록 설계한 영역입니다.
+          </p> -->
+        </div>
+
+        <div class="about-grid">
+          <article class="card profile-card reveal reveal-left">
+            <div class="profile-media">
+              <div style="position:absolute; inset:18px; border-radius:22px;">
+                <video class="thumb-video" autoplay loop muted playsinline preload="metadata">
+                  <source src="./assets/video/about_me.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div style="position:relative; z-index:1; text-align:center; color:#fff;">
+                <!-- <strong style="display:block; color:#fff; font-size:1.1rem; margin-bottom:8px;">Profile -->
+                <!-- Visual</strong> -->
+                <!-- <span>Image / Motion Portrait Placeholder</span> -->
+              </div>
+            </div>
+            <div class="profile-body">
+              <strong>고은세</strong><br />
+              <span style="color: var(--text-muted);">UI/UX Designer · Brand Designer · Web Publisher</span>
+            </div>
+          </article>
+
+          <article class="card about-body reveal reveal-right">
+            <h3>작은 디테일까지 놓치지 않는 디자이너 </h3>
+            <p>
+              사용자의 눈길이 머무는 디테일과<br>
+              자연스럽게 이어지는 흐름을 고민하며,<br>
+              마지막 한 조각까지 완성도 있게 채워갑니다.
+            </p>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2026.06-2026.10</div>
+                <div class="timeline-role">
+                  <strong>나래디자인학원</strong>
+                  <span>AI활용 UIUX반응형 웹포트폴리오 </span>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-year">2022.02-2025.02</div>
+                <div class="timeline-role">
+                  <strong>대구보건대학교</strong>
+                  <span>보건행정학과</span>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-year">2018.03-2021.01</div>
+                <div class="timeline-role">
+                  <strong>거제중앙고학교</strong>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-year">Licenses</div>
+                <div class="timeline-role">
+                  <!-- <strong>Branding / Design / Education</strong> -->
+                  <span>IFCD 국제융합창의디자인대회/시각디자인 - Sliver Award</span> <br>
+                  <span>보건의료정보관리사 · 병원행정사 · 보험심사평가사2급 · 병원코디네이터 <br>
+                    ITQ 한글엑셀 - A · ITQ 한글파워포인트 - A · ITQ 아래한글 - A</span><br>
+
+                </div>
+              </div>
+
+              <!-- Career 항목을 timeline 내부로 이동 -->
+              <div class="timeline-item">
+                <div class="timeline-year">Career</div>
+                <div class="timeline-role">
+                  <strong>2025.03-2026.03</strong>
+                  <span>에이치플러스양지병원</span>
+                </div>
+              </div>
+            </div> <!-- .timeline 닫는 태그 -->
+
+
+            <!-- Licenses -->
+
+
+            <div class="skills">
+              <section class="skill-group">
+                <h4>Design</h4>
+                <div class="skill-tags">
+                  <span class="tag">Figma</span>
+                  <span class="tag">Photoshop</span>
+                  <span class="tag">Illustrator</span>
+                  <span class="tag">InDesign</span>
+                  <span class="tag">Premiere Pro</span>
+                  <span class="tag">After Effects</span>
+                </div>
+              </section>
+              <section class="skill-group">
+                <h4>Frontend</h4>
+                <div class="skill-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <!-- <span class="tag">Responsive UI</span> -->
+                </div>
+              </section>
+              <section class="skill-group">
+                <h4>AI Workflow</h4>
+                <div class="skill-tags">
+                  <span class="tag">ChatGPT</span>
+                  <span class="tag">Gemini </span>
+                  <span class="tag">Google Flow</span>
+                  <span class="tag">CapCut</span>
+
+                  <!-- <span class="tag">Firefly</span> -->
+                  <!-- <span class="tag">Midjourney</span> -->
+                  <!-- <span class="tag">ImageFX</span> -->
+                </div>
+              </section>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section" id="branding">
+      <div class="container">
+        <div class="section-head reveal reveal-scale">
+          <div>
+            <!-- <span class="eyebrow">브랜드별 한 줄 구성으로 세부 결과물을 미리 보기</span> -->
+            <h2>Branding Projects</h2>
+          </div>
+          <!-- <p>
+            각 브랜드마다 브랜드기획, 목업, 웹가이드, 웹사이트를 각각 별도 썸네일로 구성하고,
+            한 줄 슬라이드 안에서 빠르게 훑어볼 수 있도록 재구성했습니다.
+            <br>페이지 이동 후, 좀 더 자세한 작업 내용을 확인할 수 있습니다.
+          </p> -->
+        </div>
+
+        <div class="brand-stack">
+
+          <!-- 1nd -->
+
+          <section class="card brand-row reveal reveal-scale section-theme theme-iocean">
+            <div class="brand-info brand1_color">
+              <!-- 브랜드별 색상  brand1_color-->
+
+              <h3>I-Ocean Hospital</h3>
+              <p>
+                아이와 보호자 모두에게 친근한 병원 경험을 제공하기 위해, 캐릭터 스토리텔링부터 사용자 친화적인 웹 UI까지 전 과정을 직접 기획하고 구현했습니다.
+              </p>
+              <!-- <div class="brand-meta">
+                <span class="tag"><a href="#" target="_blank">Identity</a></span>
+                <span class="tag"><a href="#" target="_blank">Design BX</a></span>
+                <span class="tag"><a href="#" target="_blank">Web Guide</a></span>
+                <span class="tag point-color"><a href="#" target="_blank">Web Site</a></span>
+                <span class="tag"><a href="#" target="_blank">Video Guide</a></span>
+                <span class="tag"><a href="#" target="_blank">App</a></span>
+              </div> -->
+            </div>
+
+            <div>
+              <div class="brand-slider-head">
+                <span class="brand-slider-title">Website · Brand Planning · Mockup · Web Guide</span>
+                <div class="slider-controls">
+                  <!-- <button class="slider-btn" type="button" data-slider-prev="brandTrack01">←</button>
+                  <button class="slider-btn" type="button" data-slider-next="brandTrack01">→</button> -->
+                </div>
+              </div>
+
+
+
+              <div class="brand-track slider-track" id="brandTrack01">
+
+                <article class="thumb-card brand-thumb website-thumb">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/io_website.mp4" type="video/mp4" />
+                  </video>
+                  <a href="https://goeunse.github.io/ioceanhospital/" target="_blank">
+                    <img src="./assets/img/io_website.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Website</strong>
+                      <p class="thumb-explanation">아이와 보호자에게 친근하게 다가가는 아이오션병원의 웹사이트입니다.</p>
+                      <span>Brand Website / UI Design</span>
+                      <!-- <span>Live Result / Motion UI</span> -->
+                      <p class="skills-icon">
+                        <!-- <img src="assets/img/html_icon.png" alt="icon"> -->
+                        <img src="assets/img/photoshop_p.png" alt="icon">
+                        <img src="assets/img/illustrator_p.png" alt="icon">
+                        <img src="assets/img/pr_p.png" alt="icon">
+                        <img src="assets/img/figma_p.png" alt="icon">
+                        <img src="assets/img/vs_code_p.png" alt="icon">
+                        <img src="assets/img/gpt_p.png" alt="icon">
+                        <img src="assets/img/gemi_p.png" alt="icon">
+                        <img src="assets/img/flow_p.png" alt="icon">
+
+                      </p>
+                    </div>
+
+                  </a>
+                </article>
+
+
+                <!-- Brand Planning -->
+                <article class="thumb-card brand-thumb planning-thumb">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="./assets/video/io_bp.mp4" type="video/mp4" />
+                  </video>
+
+                  <a href="./guide/guide.html#brand_planning" target="_blank">
+                    <img src="./assets/img/io_bp.png" alt="아이오션 브랜드 기획">
+
+                    <div class="thumb-overlay">
+                      <strong>Brand Planning</strong>
+                      <p class="thumb-explanation">
+                        따뜻한 인사로 시작하는 아이오션, 그 안에 담긴 브랜드의 생각과 방향을 소개합니다.
+                      </p>
+                      <span>Brand Concept / Strategy</span>
+
+                      <p class="skills-icon">
+                        <img src="assets/img/photoshop_p.png" alt="icon">
+                        <img src="assets/img/pr_p.png" alt="icon">
+                        <img src="assets/img/figma_p.png" alt="icon">
+                        <img src="assets/img/vs_code_p.png" alt="icon">
+                        <img src="assets/img/gpt_p.png" alt="icon">
+                        <img src="assets/img/gemi_p.png" alt="icon">
+                        <img src="assets/img/flow_p.png" alt="icon">
+                      </p>
+                    </div>
+                  </a>
+                </article>
+
+
+
+                <!-- mockup -->
+                <article class="thumb-card brand-thumb">
+                  <!-- <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/io_mockup.mp4" type="video/mp4" />
+                  </video> -->
+
+                  <a href="./guide/guide.html#mockup" target="_blank">
+                    <img src="./assets/img/io_up.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Mockup</strong>
+                      <p class="thumb-explanation">다양한 공간과 소품에 적용된 아이오션의 친근하고 따뜻한 브랜드 모습을 확인해 보세요.</p>
+                      <span>Brand Mockup / Applications</span>
+                      <p class="skills-icon">
+                        <img src="assets/img/photoshop_p.png" alt="icon">
+                        <img src="assets/img/figma_p.png" alt="icon">
+                        <img src="assets/img/vs_code_p.png" alt="icon">
+                        <img src="assets/img/gpt_p.png" alt="icon">
+                        <img src="assets/img/gemi_p.png" alt="icon">
+                        <img src="assets/img/flow_p.png" alt="icon">
+                      </p>
+                    </div>
+                  </a>
+                </article>
+
+
+
+                <article class="thumb-card brand-thumb">
+                  <a href="./guide/guide.html#webguide" target="_blank">
+                    <img src="./assets/img/io_wg.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Web Guide</strong>
+                      <p class="thumb-explanation">편안한 탐색과 쉬운 정보 전달을 위해 구성한 아이오션 웹사이트의 화면과 디자인을 살펴보세요.</p>
+                      <span>UI Structure / Design System</span>
+                      <p class="skills-icon">
+                        <img src="assets/img/photoshop_p.png" alt="icon">
+                        <img src="assets/img/indesign_p.png" alt="icon">
+                        <img src="assets/img/figma_p.png" alt="icon">
+                        <img src="assets/img/vs_code_p.png" alt="icon">
+                        <img src="assets/img/gpt_p.png" alt="icon">
+                        <img src="assets/img/gemi_p.png" alt="icon">
+                      </p>
+                    </div>
+                  </a>
+                </article>
+
+
+
+                <!-- <article class="thumb-card brand-thumb">
+                  <a href="#" target="_blank">
+                    <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Editorial</strong>
+                      <p class="thumb-explanation">브랜드를 확인하실 수 있습니다.</p>
+                      <span>Layout / Print / Digital</span>
+                      <p class="skills-icon">
+                        <img src="assets/img/html_icon.png" alt="icon">
+                        <img src="assets/img/vs_code.png" alt="icon">
+                      </p>
+                    </div>
+                  </a>
+                </article> -->
+
+                <!-- <article class="thumb-card brand-thumb">
+                  <video class="thumb-video" muted loop playsinline preload="metadata"><source src="assets/brand-02-display.mp4" type="video/mp4" /></video>
+                  <a href="#" target="_blank">
+                    <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Display</strong>
+                      <p class="thumb-explanation">브랜드를 확인하실 수 있습니다.</p>
+                      <span>Banner / Campaign / Motion</span>
+                      <p class="skills-icon">
+                        <img src="assets/img/html_icon.png" alt="icon">
+                        <img src="assets/img/vs_code.png" alt="icon">
+                      </p>
+                    </div>
+                  </a>
+                </article> -->
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- 2nd -->
+          <section class="card brand-row reveal reveal-scale section-theme theme-brand02">
+            <div class="brand-info brand2_color">
+              <!-- 브랜드별 색상  brand2_color-->
+              <h3>ODDi</h3>
+              <p>
+                다양한 브랜드의 겨울 아우터를 큐레이션하여 룩북 화보와 매치하고, 고객의 시선을 끄는 특별 기획전 원페이지로 구현했습니다.
+              </p>
+              <!-- <div class="brand-meta">
+                <span class="tag"><a href="#" target="_blank">Identity</a></span>
+                <span class="tag"><a href="#" target="_blank">Design BX</a></span>
+                <span class="tag"><a href="#" target="_blank">Web Guide</a></span>
+                <span class="tag point-color"><a href="#" target="_blank">Web Site</a></span>
+                <span class="tag"><a href="#" target="_blank">Video Guide</a></span>
+                <span class="tag"><a href="#" target="_blank">App</a></span>
+              </div> -->
+            </div>
+
+            <div>
+              <div class="brand-slider-head">
+                <span class="brand-slider-title">Website · Brand Planning · Web Guide ·
+                  Display</span>
+                <div class="slider-controls">
+                  <!-- <button class="slider-btn" type="button" data-slider-prev="brandTrack02">←</button>
+                  <button class="slider-btn" type="button" data-slider-next="brandTrack02">→</button> -->
+                </div>
+              </div>
+              <div class="brand-track slider-track" id="brandTrack02">
+
+
+                <article class="thumb-card brand-thumb">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="./assets/video/od_ws.mp4" type="video/mp4" />
+                  </video>
+                  <a href="https://goeunse.github.io/oddi/" target="_blank">
+                    <!-- <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand"> -->
+                    <div class="thumb-overlay">
+                      <strong>Website</strong>
+                      <p class="thumb-explanation">다양한 브랜드의 아우터를 큐레이션하여 룩북 화보와 매치하고, 생동감 있는 모션 UI로 구현한 ODDi 기획전 웹사이트입니다.
+                      </p>
+                      <!-- <p class="thumb-explanation">매력적인 아우터 큐레이션과 화보로 고객의 시선을 끄는 ODDi 프로모션 웹사이트입니다.</p> -->
+                      <span>Promotion Website / Motion UI</span>
+                      <p class="skills-icon">
+                        <img src="assets/img/photoshop_g.png" alt="icon">
+                        <img src="assets/img/pr_g.png" alt="icon">
+                        <img src="assets/img/figma_g.png" alt="icon">
+                        <img src="assets/img/vs_code_g.png" alt="icon">
+                        <img src="assets/img/gpt_g.png" alt="icon">
+                        <img src="assets/img/gemi_g.png" alt="icon">
+                        <img src="assets/img/flow_g.png" alt="icon">
+
+                      </p>
+                    </div>
+
+                  </a>
+                </article>
+
+
+                <article class="thumb-card brand-thumb">
+                  <!-- <video class="thumb-video" muted loop playsinline preload="metadata"><source src="assets/brand-02-mockup.mp4" type="video/mp4" /></video> -->
+                  <a href="./guide/guide.html#od_bp" target="_blank">
+                    <img src="./assets/img/od_up.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Brand Planning</strong>
+                      <p class="thumb-explanation">익숙한 일상 속 '나만의 작은 다름'을 제안하는 ODDi의 브랜드 스토리와 프로모션 컨셉입니다.</p>
+                      <span>Brand Strategy / Promotion Concept</span>
+                      <!-- <span>Visual System / Asset</span> -->
+                      <p class="skills-icon">
+                        <img src="assets/img/pr_g.png" alt="icon">
+                        <img src="assets/img/figma_g.png" alt="icon">
+                        <img src="assets/img/vs_code_g.png" alt="icon">
+                        <img src="assets/img/gpt_g.png" alt="icon">
+                        <img src="assets/img/gemi_g.png" alt="icon">
+                        <img src="assets/img/flow_g.png" alt="icon">
+
+                      </p>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="thumb-card brand-thumb">
+                  <a href="#" target="_blank">
+                    <img src="./assets/img/od_wg.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Web Guide</strong>
+                      <p class="thumb-explanation">고객의 시선을 이끄는 직관적인 원페이지 레이아웃과 일관된 겨울 무드를 담아낸 ODDi 프로모션 페이지의 디자인 시스템입니다.</p>
+                      <span>Ui Structure / Design System</span>
+                      <p class="skills-icon">
+                        <img src="assets/img/figma_g.png" alt="icon">
+                        <img src="assets/img/vs_code_g.png" alt="icon">
+                        <img src="assets/img/gpt_g.png" alt="icon">
+                        <img src="assets/img/gemi_g.png" alt="icon">
+
+                      </p>
+                    </div>
+                  </a>
+                </article>
+
+
+
+                <article class="thumb-card brand-thumb">
+                  <a href="#" target="_blank">
+                    <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Editorial</strong>
+                      <p class="thumb-explanation">브랜드를 확인하실 수 있습니다.</p>
+                      <span>Layout / Print / Digital</span>
+                      <p class="skills-icon">
+                        <img src="assets/img/html_icon.png" alt="icon">
+                        <img src="assets/img/vs_code.png" alt="icon">
+                      </p>
+                    </div>
+                  </a>
+                </article>
+
+                <!-- <article class="thumb-card brand-thumb">
+                   <video class="thumb-video" muted loop playsinline preload="metadata"><source src="assets/brand-02-display.mp4" type="video/mp4" /></video> 
+                  <a href="#" target="_blank">
+                    <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
+                    <div class="thumb-overlay">
+                      <strong>Display</strong>
+                      <p class="thumb-explanation">브랜드를 확인하실 수 있습니다.</p>
+                      <span>Banner / Campaign / Motion</span>
+                      <p class="skills-icon">
+                        <img src="assets/img/html_icon.png" alt="icon">
+                        <img src="assets/img/vs_code.png" alt="icon">
+                      </p>
+                    </div>
+                  </a>
+                </article> -->
+
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section-head reveal reveal-scale">
+          <div>
+            <!-- <span class="eyebrow">포스터, 배너, 카드뉴스, 릴스·영상 작업을 구성/span> -->
+            <h2>Visual Content</h2>
+          </div>
+          <!-- <p>
+            정지형 비주얼 작업은 한 줄 안에서 함께 보여주고, 영상 작업은 별도 행으로 분리해 흐름이 자연스럽도록 정리했습니다.
+          </p> -->
+        </div>
+
+        <div class="works-stack">
+          <section class="card work-row reveal reveal-scale section-theme theme-promotion">
+            <div class="work-row-head">
+              <div>
+                <h3>Card News · Promotion</h3>
+                <!-- <h3>Posters · Banners · Card News · Promotion</h3> -->
+
+                <!-- <p>포스터, 디지털 배너, 카드뉴스를 팝업을 통해 자세히 확인하실 수 있습니다.</p> -->
+                <p>생활 정보를 전하는 카드뉴스부터 브랜드·시즌 프로모션까지, 주제와 목적에 맞춰 디자인한 콘텐츠입니다. 카드를 클릭해 자세히 살펴보세요.</p>
+              </div>
+              <div class="slider-controls">
+                <button class="slider-btn" type="button" data-slider-prev="visualTrack">←</button>
+                <button class="slider-btn" type="button" data-slider-next="visualTrack">→</button>
+              </div>
+            </div>
+            <div class="thumb-track slider-track" id="visualTrack">
+
+
+
+              <!-- 카카오 비즈니스 (오늘의집 크리스마스 프로모션) -->
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Promotion" data-modal-title="오늘의집 크리스마스 겨울 침구 특가 기획전"
+                data-modal-description="크리스마스 시즌을 맞아 기획한 오늘의집 겨울 침구 릴레이 특가 프로모션 배너입니다. '산타 할아버지.. 딱! 5분만 잘게요'라는 공감대를 형성하는 유쾌한 카피를 통해 포근한 겨울 이불의 텍스처를 시각적으로 어필했습니다."
+                data-modal-role="Promotion Design / Copywriting"
+                data-modal-tools="ChatGPT, Gemini, Google Flow, Photoshop, Figma" data-modal-summary="크리스마스 릴레이 특가 프로모션"
+                data-modal-meta1-label="Topic" data-modal-meta1-value="Promotion" data-modal-meta2-label="Platform"
+                data-modal-meta2-value="오늘의집" data-modal-meta3-label="Format" data-modal-meta3-value="Vertical Banner"
+                data-modal-meta4-label="Target" data-modal-meta4-value="E-commerce"
+                data-modal-tags="Promotion, Event, E-commerce, Banner" data-modal-note-title="Editable Note"
+                data-modal-note="12월 5일, 15일, 25일에 맞춰 순차적으로 오픈되는 릴레이 이벤트의 기대감을 높이는 데 집중했습니다. 찢어진 종이 질감의 그래픽 요소로 화면을 분할하여 트렌디함을 살렸으며, 텍스트 가독성을 높여 이커머스 프로모션의 목적에 충실하도록 디자인했습니다."
+                data-modal-video="Card news preview"
+                data-modal-link="https://www.figma.com/proto/8twfXYB4ZbxkrAfsx0gUZt/%EC%98%A4%EB%8A%98%EC%9D%98%EC%A7%91-%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4-%EA%B2%A8%EC%9A%B8-%EC%B9%A8%EA%B5%AC-%ED%8A%B9%EA%B0%80-%EA%B8%B0%ED%9A%8D%EC%A0%84?node-id=1-446&page-id=1%3A444&starting-point-node-id=1%3A446&t=SJLX85X5qrMEfGtx-1"
+                data-modal-target="_blank"
+                data-modal-images="assets/img/kakao.jpg|assets/img/kakao1.jpg|assets/img/kakao2.jpg|assets/img/kakao3.jpg"
+                data-modal-ratio="3 / 4">
+
+                <div class="thumb-image banner-thumb-fit">
+                  <img src="./assets/img/kakao.jpg" alt="오늘의집 크리스마스 프로모션">
+                </div>
+
+                <div class="thumb-overlay">
+                  <strong>오늘의집 크리스마스 프로모션</strong>
+                  <span>Event Banner / Figma</span>
+                </div>
+              </article>
+
+
+
+
+              <!-- 카드뉴스 - 수면관련 -->
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News" data-modal-title="수면 상식 카드뉴스"
+                data-modal-description="일상에서 오해하기 쉬운 수면 상식 5가지를 신뢰할 수 있는 자료를 바탕으로 풀어낸 카드뉴스입니다."
+                data-modal-role="Card News Design" data-modal-tools="Figma, ChatGPT"
+                data-modal-summary="수면 건강, 정보형 카드뉴스" data-modal-meta1-label="Topic" data-modal-meta1-value="Promotion"
+                data-modal-meta2-label="Pages" data-modal-meta2-value="7 Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Intro → Detail → CTA" data-modal-meta4-label="Style"
+                data-modal-meta4-value="Clean Info Layout" data-modal-tags="Infographic, Healthcare, Information"
+                data-modal-note-title="Editable Note" data-modal-note="카드뉴스 프로젝트용 자유 메모 영역입니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com"
+                data-modal-images="assets/img/insomnia1.png|assets/img/insomnia2.png|assets/img/insomnia3.png|assets/img/insomnia4.png|assets/img/insomnia5.png|assets/img/insomnia6.png"
+                data-modal-ratio="3 / 4">
+                <div class="thumb-image">
+                  <img src="./assets/img/insomnia1.png" alt="card news">
+                </div>
+                <div class="thumb-overlay">
+                  <strong>수면 상식 카드뉴스</strong>
+                  <span>수면 건강 / 정보형 콘텐츠</span>
+                </div>
+
+
+                <!-- <div class="thumb-overlay"><strong>Card News Series B</strong><span>Promotion / Information</span></div> -->
+              </article>
+
+
+
+
+              <!-- 리센느 방향제 -->
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News Project" data-modal-title="리센느 · 레미니 방향제 랜덤박스 프로모션"
+                data-modal-description="리센느의 공식 캐릭터 IP '레미니'를 활용한 차량용 방향제 랜덤박스 기획 및 언박싱 경험을 담아낸 SNS 프로모션 카드뉴스입니다."
+                data-modal-role="Card News Design" data-modal-tools="Photoshop, ChatGPT"
+                data-modal-summary="인스타그램 캐러셀 형식의 카드뉴스입니다. 첫 장에서 주제를 제시하고 뒤로 갈수록 정보 흐름이 이어지도록 구성했습니다."
+                data-modal-meta1-label="Topic" data-modal-meta1-value="Brand Story" data-modal-meta2-label="Pages"
+                data-modal-meta2-value="7 Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Cover → Info → CTA" data-modal-meta4-label="Style"
+                data-modal-meta4-value="Editorial Carousel"
+                data-modal-tags="K-POP, Goods, Promotion, Merchandise, Package Design"
+                data-modal-note-title="Editable Note"
+                data-modal-note="카드뉴스는 페이지 흐름, 표지 방향, 정보 구성 방식 등을 이 박스에서 자유롭게 수정할 수 있습니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com"
+                data-modal-images="assets/img/carbox1.png|assets/img/carbox2.png|assets/img/carbox3.png|assets/img/car_r1.png|assets/img/car_r2.png|assets/img/car_r3.png|assets/img/car_r4.png|assets/img/car_r5.png"
+                data-modal-ratio="4 / 5">
+                <div class="thumb-image">
+                  <img src="./assets/img/carbox1.png" alt="car air">
+                </div>
+                <div class="thumb-overlay"><strong>리센느 방향제 랜덤박스</strong><span>굿즈 프로모션 / SNS 캐러셀</span>
+                </div>
+              </article>
+
+
+
+              <!-- 카드뉴스 - 청년 -->
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News" data-modal-title="처음 알아보는 청년 전·월세대출 가이드"
+                data-modal-description="보증금 마련부터 월세 지원까지, 청년들이 꼭 알아야 할 전·월세 대출 상품 비교와 대출 신청 절차를 한눈에 이해하기 쉽게 정리한 정보형 카드뉴스입니다."
+                data-modal-role="Card News Design / Planning" data-modal-tools="ChatGPT, Photoshop"
+                data-modal-summary="청년 주거 지원, 금융 정보형 카드뉴스" data-modal-meta1-label="Topic"
+                data-modal-meta1-value="Finance & Housing" data-modal-meta2-label="Pages"
+                data-modal-meta2-value="6 Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Problem → Product → Checklist → Process → CTA" data-modal-meta4-label="Style"
+                data-modal-meta4-value="3D Character & Clean Layout"
+                data-modal-tags="Card News, Infographic, Finance, Housing, Guide" data-modal-note-title="Editable Note"
+                data-modal-note="복잡하고 어렵게 느껴지는 금융·주거 정책 정보를 3D 일러스트와 단계별 프로세스 UI로 시각화하여 사회초년생의 정보 접근성을 높였습니다. 주택도시기금의 핵심 정보를 직관적으로 습득할 수 있도록 카드별 넘버링과 체크박스 형태의 레이아웃을 채택했습니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com" data-modal-images="assets/img/house1.png|assets/img/house2.png|assets/img/house3.png|
+                assets/img/house4.png|assets/img/house5.png|assets/img/house1.png">
+                <div class="thumb-image">
+                  <img src="./assets/img/house1.png" alt="card news">
+                </div>
+                <div class="thumb-overlay">
+                  <strong>청년 전·월세대출 가이드</strong>
+                  <span>주거 지원 / 금융 정보형 카드뉴스</span>
+                </div>
+              </article>
+
+              <!-- 카드뉴스 - 러쉬 -->
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News" data-modal-title="LUSH X 먼작귀 스페셜 콜라보레이션"
+                data-modal-description="러쉬 특유의 다채로운 색감에 인기 캐릭터 '먼작귀'를 결합하여, 가상의 스프링 컬렉션 패키지를 기획하고 이를 홍보하는 SNS 프로모션 카드뉴스입니다."
+                data-modal-role="Promotion Planning / Package Design" data-modal-tools="ㅁㄴㅇㅁㅇㄴㅁㅇㅁㄴㅁㅇㅁㄴㅇㅁㄴㅇㅁㅇㄴㅁㅇㅁㅇㅁㅇㅁㅇhatGPT, Photoshop"
+                data-modal-summary="캐릭터 콜라보레이션 및 굿즈 프로모션" data-modal-meta1-label="Topic"
+                data-modal-meta1-value="Brand Collaboration" data-modal-meta2-label="Pages"
+                data-modal-meta2-value="6ㅁㅇㄻㄻㅇㅁㅇㄻㅇㄻㄹㅇㅇ Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Teaser → Product Lineup → Event" data-modal-meta4-label="Style"
+                data-modal-meta4-value="Vibrant & Cute Layout"
+                data-modal-tags="Collaboration, Character, Package Design, Promotion, LUSH" data-modal-note-title="Editable Note"
+                data-modal-note="러쉬의 자연주의적이고 키치한 브랜드 무드와 먼작귀 캐릭터의 특유의 귀여움을 이질감 없이 조화롭게 믹스하는 데 집중했습니다. 배스밤 등의 가상 패키지 디자인부터 SNS 홍보용 카드뉴스까지 연결하여 팬덤과 타겟 소비자의 소장 욕구를 자극하도록 기획했습니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com"
+                data-modal-images="assets/img/lush1.jpg|assets/img/lush2.jpg">
+                <div class="thumb-image">
+                  <img src="./assets/img/lush1.jpg" alt="card news">
+                </div>
+                <div class="thumb-overlay">
+                  <strong>LUSH X 먼작귀 콜라보레이션</strong>
+                  <span>브랜드 콜라보 / 프로모션 기획</span>
+                </div>
+
+              </article>
+
+
+              <!-- 카드뉴스 - 코드키퍼 -->
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News" data-modal-title="처음 알아보는 청년 전·월세대출 가이드"
+                data-modal-description="보증금 마련부터 월세 지원까지, 청년들이 꼭 알아야 할 전·월세 대출 상품 비교와 대출 신청 절차를 한눈에 이해하기 쉽게 정리한 정보형 카드뉴스입니다."
+                data-modal-role="Card News Design / Planning" data-modal-tools="ChatGPT, Photoshop"
+                data-modal-summary="청년 주거 지원, 금융 정보형 카드뉴스" data-modal-meta1-label="Topic"
+                data-modal-meta1-value="Finance & Housing" data-modal-meta2-label="Pages"
+                data-modal-meta2-value="6 Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Problem → Product → Checklist → Process → CTA" data-modal-meta4-label="Style"
+                data-modal-meta4-value="3D Character & Clean Layout"
+                data-modal-tags="Card News, Infographic, Finance, Housing, Guide" data-modal-note-title="Editable Note"
+                data-modal-note="복잡하고 어렵게 느껴지는 금융·주거 정책 정보를 3D 일러스트와 단계별 프로세스 UI로 시각화하여 사회초년생의 정보 접근성을 높였습니다. 주택도시기금의 핵심 정보를 직관적으로 습득할 수 있도록 카드별 넘버링과 체크박스 형태의 레이아웃을 채택했습니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com"
+                data-modal-images="assets/img/wish_keeper1.jpg|assets/img/wish_keeper2.jpg|assets/img/wish_keeper3.jpg|assets/img/wish_keeper4.jpg">
+                <div class="thumb-image">
+                  <img src="./assets/img/wish_keeper1.jpg" alt="card news">
+                </div>
+                <div class="thumb-overlay">
+                  <strong>위시</strong>
+                  <span>주거 지원 / 금융 정보형 카드뉴스</span>
+                </div>
+
+              </article>
+
+
+              <!-- 카드뉴스 - 위시 스프루 -->
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News" data-modal-title="처음 알아보는 청년 전·월세대출 가이드"
+                data-modal-description="보증금 마련부터 월세 지원까지, 청년들이 꼭 알아야 할 전·월세 대출 상품 비교와 대출 신청 절차를 한눈에 이해하기 쉽게 정리한 정보형 카드뉴스입니다."
+                data-modal-role="Card News Design / Planning" data-modal-tools="ChatGPT, Photoshop"
+                data-modal-summary="청년 주거 지원, 금융 정보형 카드뉴스" data-modal-meta1-label="Topic"
+                data-modal-meta1-value="Finance & Housing" data-modal-meta2-label="Pages"
+                data-modal-meta2-value="6 Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Problem → Product → Checklist → Process → CTA" data-modal-meta4-label="Style"
+                data-modal-meta4-value="3D Character & Clean Layout"
+                data-modal-tags="Card News, Infographic, Finance, Housing, Guide" data-modal-note-title="Editable Note"
+                data-modal-note="복잡하고 어렵게 느껴지는 금융·주거 정책 정보를 3D 일러스트와 단계별 프로세스 UI로 시각화하여 사회초년생의 정보 접근성을 높였습니다. 주택도시기금의 핵심 정보를 직관적으로 습득할 수 있도록 카드별 넘버링과 체크박스 형태의 레이아웃을 채택했습니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com"
+                data-modal-images="assets/img/wish_sprue1.jpg|assets/img/wish_sprue2.jpg|assets/img/wish_sprue3.jpg|assets/img/wish_sprue4.jpg|assets/img/wish_sprue5.jpg">
+                <div class="thumb-image">
+                  <img src="./assets/img/wish_sprue1.jpg" alt="card news">
+                </div>
+                <div class="thumb-overlay">
+                  <strong>청년 전·월세대출 가이드</strong>
+                  <span>주거 지원 / 금융 정보형 카드뉴스</span>
+                </div>
+
+              </article>
+
+
+
+
+
+
+
+              <!-- poster / banner / cardnews / reels 모달 전용 큰 이미지는 data-modal-media="assets/img/원하는파일.jpg" 로 직접 지정 -->
+              <!-- 카드별 모달 비율은 data-modal-ratio="가로 / 세로" 형식으로 지정: 예) 1200 / 628, 1 / 1, 9 / 16, 1080 / 1350 -->
+              <article class="poster-thumb thumb-card modal-card" data-modal-type="poster"
+                data-modal-label="Poster Project" data-modal-title="Poster Series A"
+                data-modal-description="이벤트 홍보용 포스터 시리즈입니다. 타이포그래피와 무드 중심의 키비주얼 작업입니다." data-modal-role="Poster Design"
+                data-modal-tools="Photoshop, Illustrator"
+                data-modal-summary="전시/행사 성격의 키비주얼 포스터 시리즈입니다. 메인 타이포와 무드 중심 그래픽으로 메시지를 압축해 전달합니다."
+                data-modal-meta1-label="Format" data-modal-meta1-value="A2 Poster / Digital Adaptation"
+                data-modal-meta2-label="Client" data-modal-meta2-value="Brand Campaign" data-modal-meta3-label="Year"
+                data-modal-meta3-value="2026" data-modal-meta4-label="Concept"
+                data-modal-meta4-value="Bold Type / Minimal Mood" data-modal-tags="Typography, Campaign, Key Visual"
+                data-modal-note-title="Editable Note"
+                data-modal-note="이 영역은 포스터 전용 메모 박스입니다. 전시 개요, 인쇄 사양, 제작 포인트 등으로 자유롭게 수정하면 됩니다."
+                data-modal-video="Poster motion teaser area" data-modal-link="https://example.com"
+                data-modal-media="assets/img/poster_thumbnail_sample.jpg" data-modal-ratio="3 / 4">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="assets/video/poster.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-overlay"><strong>Poster Series A</strong><span>Campaign / Event Visual</span></div>
+              </article>
+
+
+
+
+
+
+
+              <article class="poster-thumb thumb-card modal-card" data-modal-type="poster" data-modal-label="Poster"
+                data-modal-title="Poster Series B" data-modal-description="브랜드 포스터 시리즈입니다."
+                data-modal-role="Poster Design" data-modal-tools="Photoshop"
+                data-modal-summary="브랜드 무드를 중심으로 전개한 포스터 시리즈입니다." data-modal-meta1-label="Format"
+                data-modal-meta1-value="B1 / SNS Poster" data-modal-meta2-label="Client"
+                data-modal-meta2-value="Brand Promotion" data-modal-meta3-label="Year" data-modal-meta3-value="2026"
+                data-modal-meta4-label="Concept" data-modal-meta4-value="Graphic Mood"
+                data-modal-tags="Poster, Branding" data-modal-note-title="Editable Note"
+                data-modal-note="포스터 프로젝트 설명을 여기서 직접 바꿀 수 있습니다." data-modal-video="Poster preview"
+                data-modal-link="https://example.com" data-modal-media="assets/img/poster_thumbnail_sample.jpg"
+                data-modal-ratio="5 / 7">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="assets/video/poster.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-overlay"><strong>Poster Series B</strong><span>Brand / Promotion</span></div>
+              </article>
+
+              <article class="ad-thumb thumb-card modal-card" data-modal-type="banner" data-modal-label="Banner Project"
+                data-modal-title="Banner Set A" data-modal-description="디지털 배너 광고 세트입니다."
+                data-modal-role="Banner Design" data-modal-tools="Photoshop, Figma"
+                data-modal-summary="퍼포먼스 배너와 SNS용 변형 소재를 함께 설계한 배너 세트입니다." data-modal-meta1-label="Platform"
+                data-modal-meta1-value="Meta / Web / App" data-modal-meta2-label="Campaign"
+                data-modal-meta2-value="Seasonal Promotion" data-modal-meta3-label="Size"
+                data-modal-meta3-value="1080x1080 / 1200x628" data-modal-meta4-label="Placement"
+                data-modal-meta4-value="Feed / Display / Landing" data-modal-tags="Banner, Performance, SNS"
+                data-modal-note-title="Editable Note" data-modal-note="배너는 플랫폼, 사이즈, CTA 방향 등을 이 박스에서 자유롭게 수정하면 됩니다."
+                data-modal-video="Banner motion preview" data-modal-link="https://example.com"
+                data-modal-media="assets/img/banner_sample.jpeg" data-modal-ratio="1200 / 628">
+
+
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-overlay"><strong>Banner Set A</strong><span>Digital Ad System</span></div>
+              </article>
+
+              <article class="ad-thumb thumb-card modal-card" data-modal-type="banner" data-modal-label="Banner"
+                data-modal-title="Banner Set B" data-modal-description="프로모션 웹 배너 세트입니다."
+                data-modal-role="Banner Design" data-modal-tools="Photoshop" data-modal-summary="웹 프로모션 메인/서브 배너 세트입니다."
+                data-modal-meta1-label="Platform" data-modal-meta1-value="Website" data-modal-meta2-label="Campaign"
+                data-modal-meta2-value="Promotion" data-modal-meta3-label="Size"
+                data-modal-meta3-value="PC / Mobile Responsive" data-modal-meta4-label="Placement"
+                data-modal-meta4-value="Hero / Mid Banner" data-modal-tags="Banner, Web"
+                data-modal-note-title="Editable Note" data-modal-note="배너 프로젝트 설명을 이 텍스트로 바꾸면 됩니다."
+                data-modal-video="Banner motion preview" data-modal-link="https://example.com"
+                data-modal-media="assets/img/banner_sample.jpeg">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-overlay"><strong>Banner Set B</strong><span>Web Promotion</span></div>
+              </article>
+
+
+
+
+
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News" data-modal-title="Card News Series B"
+                data-modal-description="프로모션 콘텐츠를 정보형 카드뉴스로 정리한 작업입니다." data-modal-role="Card News Design"
+                data-modal-tools="Photoshop, Figma" data-modal-summary="정보 전달 중심의 프로모션 카드뉴스입니다."
+                data-modal-meta1-label="Topic" data-modal-meta1-value="Promotion" data-modal-meta2-label="Pages"
+                data-modal-meta2-value="7 Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Intro → Detail → CTA" data-modal-meta4-label="Style"
+                data-modal-meta4-value="Clean Info Layout" data-modal-tags="Promotion, Information"
+                data-modal-note-title="Editable Note" data-modal-note="카드뉴스 프로젝트용 자유 메모 영역입니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com"
+                data-modal-images="assets/img/beads1.png|assets/img/beads2.png|assets/img/tray.png|
+                assets/img/beads3.png|assets/img/beads4.png|assets/img/beads5.png|assets/img/beads6.png|assets/img/beads7.png">
+                <div class="thumb-image">
+                  <img src="./assets/img/beads1.png" alt="card news">
+                </div>
+                <div class="thumb-overlay"><strong>Card News Series B</strong><span>Promotion / Information</span>
+                </div>
+              </article>
+
+
+
+
+
+
+              <!-- 이거 내가 따로 추가한 거 // 이상하면 지우셈 -->
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News" data-modal-title="Card News Series B"
+                data-modal-description="프로모션 콘텐츠를 정보형 카드뉴스로 정리한 작업입니다." data-modal-role="Card News Design"
+                data-modal-tools="Photoshop, Figma" data-modal-summary="정보 전달 중심의 프로모션 카드뉴스입니다."
+                data-modal-meta1-label="Topic" data-modal-meta1-value="Promotion" data-modal-meta2-label="Pages"
+                data-modal-meta2-value="7 Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Intro → Detail → CTA" data-modal-meta4-label="Style"
+                data-modal-meta4-value="Clean Info Layout" data-modal-tags="Promotion, Information"
+                data-modal-note-title="Editable Note" data-modal-note="카드뉴스 프로젝트용 자유 메모 영역입니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com" data-modal-images="assets/img/sprukit_box.png|assets/img/sprukit_3d.png|assets/img/sprukit1.png|
+                assets/img/sprukit2.png|assets/img/sprukit3.png|assets/img/sprukit4.png|assets/img/sprukit5.png">
+                <div class="thumb-image">
+                  <img src="./assets/img/sprukit_box.png" alt="card news">
+                </div>
+                <div class="thumb-overlay"><strong>Card News Series B</strong><span>Promotion / Information</span>
+                </div>
+              </article>
+
+
+
+
+              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
+                data-modal-label="Card News" data-modal-title="Card News Series B"
+                data-modal-description="프로모션 콘텐츠를 정보형 카드뉴스로 정리한 작업입니다." data-modal-role="Card News Design"
+                data-modal-tools="Photoshop, Figma" data-modal-summary="정보 전달 중심의 프로모션 카드뉴스입니다."
+                data-modal-meta1-label="Topic" data-modal-meta1-value="Promotion" data-modal-meta2-label="Pages"
+                data-modal-meta2-value="7 Pages" data-modal-meta3-label="Flow"
+                data-modal-meta3-value="Intro → Detail → CTA" data-modal-meta4-label="Style"
+                data-modal-meta4-value="Clean Info Layout" data-modal-tags="Promotion, Information"
+                data-modal-note-title="Editable Note" data-modal-note="카드뉴스 프로젝트용 자유 메모 영역입니다."
+                data-modal-video="Card news preview" data-modal-link="https://example.com"
+                data-modal-images="assets/img/codekeeper.png|assets/img/codekeeper1_1.png|assets/img/codekeeper1_2.png|
+                assets/img/codekeeper2_1.png|assets/img/codekeeper2_2.png|assets/img/codekeeper3_1.png|assets/img/codekeeper3_2.png|assets/img/codekeeper4_1.png|assets/img/codekeeper4_2.png|assets/img/codekeeper5_1.png|assets/img/codekeeper5_2.png|assets/img/codekeeper6_1.png|assets/img/codekeeper6_2.png">
+                <div class="thumb-image">
+                  <img src="./assets/img/codekeeper.png" alt="">
+                </div>
+                <div class="thumb-overlay"><strong>Card News Series B</strong><span>Promotion / Information</span>
+                </div>
+              </article>
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </section>
+
+          <section class="card work-row reveal reveal-scale section-theme theme-video">
+            <div class="work-row-head">
+              <div>
+                <h3>Reels & Videos</h3>
+                <!-- <p>릴스, 숏폼, 모션 중심 작업물로 영상에 마우스를 가져가면 영상이 플레이 됩니다.</p> -->
+                <p>상상 속 장면과 캐릭터에 움직임을 더한 영상 작업입니다. 영상 위에 마우스를 올리면 미리 재생됩니다.</p>
+              </div>
+              <div class="slider-controls">
+                <button class="slider-btn" type="button" data-slider-prev="videoTrack">←</button>
+                <button class="slider-btn" type="button" data-slider-next="videoTrack">→</button>
+              </div>
+            </div>
+            <div class="thumb-track slider-track" id="videoTrack">
+
+
+              <!-- i-ocean hospital video -->
+              <article class="reels-thumb thumb-card modal-card horizontal-thumb" data-modal-type="reels"
+                data-modal-title="아이오션병원 마스코트 3D 브랜드 비디오"
+                data-modal-description="소아청소년과 아이오션병원의 브랜드 마스코트인 상괭이 의사 '괭이'와 유자 아이 '유찌'를 주인공으로 제작한 3D 브랜드 영상입니다. 두 캐릭터가 화면에 등장한 뒤 구름과 오렌지 바구니 등 주변 배경 요소가 아기자기하게 팝업되는 모션을 통해, 아이오션병원 특유의 친근하고 따뜻한 브랜드 이미지를 전달합니다."
+                data-modal-role="AI Character Animation / Video Editing"
+                data-modal-tools="CapCut, Google Flow, Premiere Pro" data-modal-meta1-label="Format"
+                data-modal-meta1-value="16:9 Horizontal" data-modal-meta2-label="Duration"
+                data-modal-meta2-value="10 sec" data-modal-tags="Brand Video, 3D Mascot, Animation"
+                data-modal-note-title="Editable Note"
+                data-modal-note="CapCut의 영상 프롬프트를 바탕으로 Google Flow를 활용해 아이오션병원 고유의 캐릭터 디자인에 맞춘 3D 모션을 새롭게 응용 및 생성했습니다. 9:16 세로형 포맷 비율로 화면을 최적화하고, Premiere Pro를 통해 워터마크를 제거하여 실무 브랜드 필름 수준의 완성도를 구현했습니다."
+                data-modal-link="https://example.com" data-modal-media="assets/video/ioceanYG.mp4"
+                data-modal-ratio="16 / 9">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="./assets/video/ioceanYG.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>I-Ocean Hospital</strong>
+                  <span>Ad Motion</span>
+                </div>
+              </article>
+
+
+              <!-- a2o lite -->
+              <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
+                data-modal-title="K-POP 그룹 A2O LITE 'NEON' UI 모션 콘셉트"
+                data-modal-description="기존의 정적인 UI 이미지 소스를 활용해 인물의 제스처와 상호작용하는 모션 영상으로 재창조한 작업입니다. 여러 개로 분산되어 있던 UI 요소 중 필요한 단일 플레이어만 추출해 시각적 집중도를 높였습니다."
+                data-modal-role="Motion Design / Reel Editing" data-modal-tools="CapCut, Google Flow, Premiere Pro"
+                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration"
+                data-modal-meta2-value="10 sec" data-modal-tags="Reels, Short-form, UI Motion"
+                data-modal-note-title="Editable Note"
+                data-modal-note="CapCut에서 이미지로만 제공되던 정적 소스에 직접 모션을 부여하여 인물의 움직임과 자연스럽게 연동시켰습니다. 불필요한 다중 UI를 덜어내어 화면을 정리하고, Premiere Pro를 이용해 워터마크를 제거하는 등 주어진 리소스의 한계를 보완하며 영상의 완성도를 높이는 데 집중했습니다."
+                data-modal-link="https://example.com" data-modal-media="assets/video/A2O_LITE.mp4" type="video/mp4"
+                data-modal-ratio="9 / 16">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="./assets/video/A2O_LITE.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>A2O LITE 'NEON'</strong>
+                  <span>Short-form Motion</span>
+                </div>
+              </article>
+
+              <!-- tesla_roadster -->
+              <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
+                data-modal-title="Tesla Roadster 시네마틱 콘셉트"
+                data-modal-description="테슬라 공식 이미지를 기반으로 로드스터의 주행과 비행을 담아낸 시네마틱 숏폼입니다. 기존 공식 영상과 차별화하여, 지상 주행부터 차량 내부, 우주 비행, 그리고 다시 지상으로 착지해 질주하는 다이내믹한 시퀀스를 새롭게 기획했습니다."
+                data-modal-role="AI Motion Generation / Video Editing" data-modal-tools="Google Flow, Premiere Pro"
+                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration"
+                data-modal-meta2-value="10 sec" data-modal-tags="Cinematic, AI Motion, Short-form"
+                data-modal-note-title="Editable Note"
+                data-modal-note="단순한 이미지 나열을 넘어 스토리텔링이 있는 흐름을 만들기 위해, Google Flow를 활용해 각 장면의 모션을 개별적으로 생성하고 연결했습니다. 이후 Premiere Pro를 통해 컷 타이밍을 세밀하게 조율하고, 불필요한 워터마크를 제거하여 영상의 시각적 완성도를 끌어올렸습니다."
+                data-modal-link="https://example.com" data-modal-media="assets/video/Tesla_Roadster.mp4">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="./assets/video/Tesla_Roadster.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>Tesla Roadster</strong>
+                  <span>Cinematic Concept</span>
+                </div>
+              </article>
+
+              <!-- 리센느 비즈 -->
+              <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
+                data-modal-title="리센느 굿즈 캐릭터 3D 변환 숏폼"
+                data-modal-description="K-POP 그룹 리센느의 기존 캐릭터를 활용한 팬메이드 숏폼 영상입니다. 납작한 2D 비즈 형태의 캐릭터를 오븐에 넣고 구우면, 반짝이는 효과와 함께 입체적인 3D 피규어 굿즈로 변신하는 귀여운 트랜지션 과정을 담았습니다."
+                data-modal-role="AI Asset Generation / Video Editing"
+                data-modal-tools="ChatGPT, Gemini, Google Flow, Premiere Pro" data-modal-meta1-label="Format"
+                data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="9 sec"
+                data-modal-tags="Fan-made, AI Motion, 3D Transition" data-modal-note-title="Editable Note"
+                data-modal-note="ChatGPT로 비즈 스타일의 캐릭터를 재해석하고, Gemini를 통해 오븐과 트레이 배경 에셋을 구축했습니다. 이후 Google Flow를 활용해 장면별 모션을 하나씩 생성하여 연결한 뒤, Premiere Pro로 자연스러운 컷 타이밍 조율 및 워터마크 제거 작업을 거쳐 영상의 완성도를 높였습니다."
+                data-modal-link="https://example.com" data-modal-media="assets/video/rescene.mp4">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="./assets/video/rescene.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>RESCENE 3D Figures</strong>
+                  <span>AI Motion Generation</span>
+                </div>
+              </article>
+
+
+              <!-- 아이오션 겨울 -->
+
+              <article class="reels-thumb thumb-card modal-card" data-modal-type="reels" data-modal-title="아이오션의 겨울"
+                data-modal-description="눈 내리는 아이오션을 배경으로 캐릭터들이 즐겁게 노는 겨울 릴스입니다. 마지막에는 두 손을 흔들며 인사하는 모습으로 따뜻하게 마무리합니다."
+                data-modal-role="Character Motion" data-modal-tools="ChatGPT, Gemini, Google Flow, Premiere Pro"
+                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration"
+                data-modal-meta2-value="10 sec" data-modal-tags="Character Motion, Winter, Short-form"
+                data-modal-note-title="Editable Note"
+                data-modal-note="ChatGPT와 Gemini를 활용해 아이오션병원 외관을 크리스마스 분위기로 재구성하고, 괭이와 유찌가 배경에 자연스럽게 어우러지도록 이미지를 제작했습니다. 완성한 이미지를 Google Flow로 영상화한 뒤, Premiere Pro에서 최종 편집했습니다."
+                data-modal-link="https://example.com" data-modal-media="assets/video/io_winter.mp4">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="./assets/video/io_winter.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>아이오션의 겨울</strong>
+                  <span>Character Motion</span>
+                </div>
+              </article>
+
+
+              <!-- 아이오션 괭이 작업 -->
+              <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
+                data-modal-title="아이오션 괭이의 업무 시간"
+                data-modal-description="작은 손으로 바쁘게 이어가는 괭이의 하루. 아이오션병원 책상 앞에서 묵묵히 일하는 모습에 따뜻한 일상의 한 장면을 담았습니다."
+                data-modal-role="AI Video &amp; Cut Editing" data-modal-tools="CapCut, Google Flow, Premiere Pro"
+                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration"
+                data-modal-meta2-value="10 sec" data-modal-tags="AI Video, Character Animation, Short-form"
+                data-modal-note-title="Editable Note"
+                data-modal-note="CapCut에 있는 프롬프트를 활용해 Google Flow로 영상을 생성한 뒤, Premiere Pro에서 컷 편집으로 마무리했습니다."
+                data-modal-link="https://example.com" data-modal-media="assets/video/io_G_job.mp4">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="./assets/video/io_G_job.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>아이오션 괭이의 업무 시간</strong>
+                  <span>AI Video &amp; Cut Editing</span>
+                </div>
+              </article>
+
+
+              <!-- 아이오션 유자 영상 -->
+
+              <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
+                data-modal-title="아이오션 유찌의 새로운 일상"
+                data-modal-description="병원에서 어린아이였던 유찌가 시간이 흘러 일을 할 수 있는 나이로 성장한 모습을 담았습니다. 반죽을 빚으며 열심히 일하는 유찌의 새로운 일상을 보여주는 10초 영상입니다."
+                data-modal-role="AI Character Video" data-modal-tools="CapCut, Google Flow"
+                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration"
+                data-modal-meta2-value="10 sec" data-modal-tags="AI Video, Character Story, Short-form"
+                data-modal-note-title="Editable Note"
+                data-modal-note="CapCut에 있는 프롬프트를 활용해 아이오션 유찌 캐릭터를 적용한 이미지를 제작하고, Google Flow를 사용해 컷 편집을 진행했습니다."
+                data-modal-link="https://example.com" data-modal-media="assets/video/io_Y_job.mp4">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="./assets/video/io_Y_job.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>아이오션 유찌의 새로운 일상</strong>
+                  <span>AI Character Video</span>
+                </div>
+              </article>
+
+              <!-- 유자 춤 -->
+              <article class="reels-thumb thumb-card modal-card horizontal-thumb" data-modal-type="reels"
+                data-modal-title="아이오션 유찌의 댄스 타임"
+                data-modal-description="선글라스를 쓴 유찌의 신나는 댄스 타임. 작은 몸으로 경쾌하게 춤추는 유찌의 모습에 장난스러운 매력과 밝은 에너지를 담았습니다."
+                data-modal-role="AI Character Animation" data-modal-tools="CapCut, Google Flow"
+                data-modal-meta1-label="Format" data-modal-meta1-value="16:9 Horizontal"
+                data-modal-meta2-label="Duration" data-modal-meta2-value="10 sec"
+                data-modal-tags="AI Video, Character Animation, Dance" data-modal-note-title="Editable Note"
+                data-modal-note="CapCut의 프롬프트를 바탕으로 아이오션병원의 유찌 캐릭터를 적용하고, Google Flow를 활용해 춤추는 모습을 영상으로 제작했습니다. 유찌의 동작을 담은 16:9 가로형 영상입니다."
+                data-modal-link="https://example.com" data-modal-media="assets/video/io_dance.mp4"
+                data-modal-ratio="16 / 9">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="./assets/video/io_dance.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>아이오션 유찌의 댄스 타임</strong>
+                  <span>AI Character Animation</span>
+                </div>
+              </article>
+
+              <!-- <article class="reels-thumb thumb-card modal-card" data-modal-title="Reel Project F"
+                data-modal-description="브랜드 인트로 영상입니다." data-modal-role="Motion Design / Short-form"
+                data-modal-tools="Premiere Pro, AI Video" data-modal-video="Reel preview area"
+                data-modal-link="https://example.com">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="assets/video/Reels_sample_01.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>Reel Project F</strong>
+                  <span>Brand Intro</span>
+                </div>
+              </article> -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- <article class="reels-thumb thumb-card modal-card" data-modal-title="Reel Project F"
+                data-modal-description="브랜드 인트로 영상입니다." data-modal-role="Motion Design / Short-form"
+                data-modal-tools="Premiere Pro, AI Video" data-modal-video="Reel preview area"
+                data-modal-link="https://example.com">
+                <video class="thumb-video" muted loop playsinline preload="metadata">
+                  <source src="assets/video/Reels_sample_01.mp4" type="video/mp4" />
+                </video>
+                <div class="thumb-play-button" aria-hidden="true">
+                  <span class="thumb-play-icon"></span>
+                </div>
+                <div class="thumb-overlay">
+                  <strong>Reel Project F</strong>
+                  <span>Brand Intro</span>
+                </div>
+              </article> -->
+    </div>
+    </section>
+    </div>
+    </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <div><strong>Your Name</strong><span>Designer Portfolio</span></div>
+      <div><strong>Email</strong><a href="mailto:hello@example.com">xxsxxs1004@gmail.com</a></div>
+      <div><strong>Contact</strong><span>X / Instagram / Facebook</span></div>
+      <div><strong>Copyright</strong><span>© 2026 Your Name. All rights reserved.</span></div>
+    </div>
+  </footer>
+
+
+  <div class="modal" id="portfolioModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" aria-label="닫기">✕</button>
+      <div class="modal-content">
+        <div class="modal-gallery">
+          <div class="modal-hero-wrap">
+            <button class="modal-nav modal-nav-prev" id="modalPrev" type="button" aria-label="이전 이미지">←</button>
+            <div class="modal-hero-media" id="modalHeroMedia">Main Preview</div>
+            <button class="modal-nav modal-nav-next" id="modalNext" type="button" aria-label="다음 이미지">→</button>
+            <div class="modal-page-indicator" id="modalPageIndicator">1 / 1</div>
+          </div>
+          <div class="modal-thumbs" id="modalThumbs">
+            <div class="modal-thumb">Mockup 01</div>
+            <div class="modal-thumb">Mockup 02</div>
+            <div class="modal-thumb">Wireframe</div>
+          </div>
+        </div>
+
+        <div class="modal-body" id="modalDynamicBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Modal layout templates: poster / banner / cardnews / reels 를 각각 직접 수정하세요 ===== -->
+  <template id="modalTemplatePoster">
+    <span class="modal-type-badge" data-field="badgeLabel">Poster Project</span>
+    <div class="modal-summary-card">
+      <strong data-field="title">Project Title</strong>
+      <p data-field="description">Project description</p>
+    </div>
+    <div class="modal-meta-grid">
+      <div class="modal-meta-card">
+        <strong>Role</strong>
+        <span data-field="role">Poster Design</span>
+      </div>
+      <div class="modal-meta-card">
+        <strong>Tools</strong>
+        <span data-field="tools">Photoshop, Illustrator</span>
+      </div>
+
+      <div>
+        <strong style="display:block; margin-bottom:10px;">Keywords</strong>
+        <div class="modal-tag-list" data-list="tags"></div>
+      </div>
+
+
+    </div>
+  </template>
+
+  <template id="modalTemplateBanner">
+    <span class="modal-type-badge" data-field="badgeLabel">Banner Project</span>
+    <div class="modal-summary-card">
+      <strong data-field="title">Project Title</strong>
+      <p data-field="description">Project description</p>
+    </div>
+    <div class="modal-meta-grid">
+      <div class="modal-meta-card">
+        <strong>Role</strong>
+        <span data-field="role">Banner Design</span>
+      </div>
+      <div class="modal-meta-card">
+        <strong>Tools</strong>
+        <span data-field="tools">Photoshop, Figma</span>
+      </div>
+
+    </div>
+
+    <div>
+      <strong style="display:block; margin-bottom:10px;">Keywords</strong>
+      <div class="modal-tag-list" data-list="tags"></div>
+    </div>
+
+  </template>
+
+  <template id="modalTemplateCardnews">
+    <span class="modal-type-badge" data-field="badgeLabel">Card News Project</span>
+    <div class="modal-summary-card">
+      <strong data-field="title">Project Title</strong>
+      <p data-field="description">Project description</p>
+    </div>
+
+    <div class="modal-meta-card">
+      <strong>Tools</strong>
+      <span data-field="tools">Photoshop, Figma</span>
+    </div>
+
+    </div>
+
+    <div>
+      <strong style="display:block; margin-bottom:10px;">Keywords</strong>
+      <div class="modal-tag-list" data-list="tags"></div>
+    </div>
+
+    <div class="modal-actions">
+      <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noreferrer noopener">Visit Website</a>
+      <a class="modal-action-link" id="modalSubLink" href="#" target="_blank" rel="noreferrer noopener">View
+        Campaign</a>
+    </div>
+  </template>
+
+  <template id="modalTemplateReels">
+    <span class="modal-type-badge" data-field="badgeLabel">Reels · Video Project</span>
+    <div class="modal-summary-card">
+      <strong data-field="title">Project Title</strong>
+      <p data-field="description">Project description</p>
+    </div>
+    <div class="modal-meta-grid">
+      <div class="modal-meta-card">
+        <strong>Role</strong>
+        <span data-field="role">Motion Design</span>
+      </div>
+      <div class="modal-meta-card">
+        <strong>Tools</strong>
+        <span data-field="tools">Premiere Pro, After Effects</span>
+      </div>
+      <div class="modal-meta-card">
+        <strong data-field="meta1Label">Format</strong>
+        <span data-field="meta1Value">9:16 Reel</span>
+      </div>
+      <div class="modal-meta-card">
+        <strong data-field="meta2Label">Duration</strong>
+        <span data-field="meta2Value">15s</span>
+      </div>
+    </div>
+    <div>
+      <strong style="display:block; margin-bottom:10px;">Keywords</strong>
+      <div class="modal-tag-list" data-list="tags"></div>
+    </div>
+    <div class="modal-note-box">
+      <strong data-field="noteTitle">Editable Note</strong>
+      <p data-field="note">릴스/영상 프로젝트에 대한 설명, 연출 포인트, 업로드 채널 등을 자유롭게 수정하세요.</p>
+    </div>
+    <div class="modal-actions">
+      <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noreferrer noopener">View Project</a>
+      <a class="modal-action-link" id="modalSubLink" href="#" target="_blank" rel="noreferrer noopener">Open Channel</a>
+    </div>
+  </template>
+
+  <template id="modalTemplateDefault">
+    <span class="modal-type-badge" data-field="badgeLabel">Project Detail</span>
+    <div class="modal-summary-card">
+      <strong data-field="title">Project Title</strong>
+      <p data-field="description">Project description</p>
+    </div>
+    <div class="modal-meta-grid">
+      <div class="modal-meta-card">
+        <strong>Role</strong>
+        <span data-field="role">Role information</span>
+      </div>
+      <div class="modal-meta-card">
+        <strong>Tools</strong>
+        <span data-field="tools">Tool information</span>
+      </div>
+      <div class="modal-meta-card">
+        <strong data-field="meta1Label">Info 01</strong>
+        <span data-field="meta1Value">Value 01</span>
+      </div>
+      <div class="modal-meta-card">
+        <strong data-field="meta2Label">Info 02</strong>
+        <span data-field="meta2Value">Value 02</span>
+      </div>
+    </div>
+    <div class="modal-note-box">
+      <strong>Summary</strong>
+      <p data-field="summary">Summary text</p>
+    </div>
+    <div>
+      <strong style="display:block; margin-bottom:10px;">Keywords</strong>
+      <div class="modal-tag-list" data-list="tags"></div>
+    </div>
+    <div class="modal-note-box">
+      <strong data-field="noteTitle">Editable Note</strong>
+      <p data-field="note">Write any note here.</p>
+    </div>
+    <div class="modal-actions">
+      <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noreferrer noopener">Visit Website</a>
+      <a class="modal-action-link" id="modalSubLink" href="#" target="_blank" rel="noreferrer noopener">View Detail</a>
+    </div>
+  </template>
+
+  <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>
