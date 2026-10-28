@@ -124,7 +124,7 @@ button {
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.78);
+  /* background: rgba(255, 255, 255, 0.78); */
   border-bottom: 1px solid rgba(17, 24, 39, 0.06);
   backdrop-filter: blur(16px);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
@@ -144,7 +144,7 @@ button {
   font-family: 'SchoolSafetyMagnifier';
   font-weight: 700;
   letter-spacing: -0.03em;
-  font-size: 1rem;
+  font-size: 1.5em;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -964,6 +964,60 @@ button {
   width: min(360px, 32vw);
 }
 
+/* 상단 이미지·영상 영역을 Mockup처럼 16:9로 통일 */
+.brand-track > .brand-thumb > img,
+.brand-track > .brand-thumb > video,
+.brand-track > .brand-thumb > a > img,
+.brand-track > .brand-thumb > a > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* 마우스를 올려도 미디어 영역 크기 유지 */
+.brand-track > .brand-thumb:hover .thumb-video {
+  transform: none;
+}
+
+
+/* 평소에는 이미지 표시 */
+.website-thumb > a > img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* 마우스를 올리면 이미지를 숨겨 뒤의 영상 표시 */
+.website-thumb:hover > a > img {
+  opacity: 0;
+}
+
+/* 키보드로 링크를 선택했을 때도 영상 표시 */
+.website-thumb:focus-within > a > img {
+  opacity: 0;
+}
+
+/* 평소에는 썸네일 이미지 표시 */
+.planning-thumb > a > img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* 마우스를 올리면 뒤의 영상 표시 */
+.planning-thumb:hover > a > img {
+  opacity: 0;
+}
+
+
+
+
+
 .thumb-track>.thumb-card {
   width: min(280px, 24vw);
 }
@@ -1117,7 +1171,7 @@ button {
 }
 
 .works-stack .thumb-overlay strong,
-.thumb-overlay span {
+.works-stack .thumb-overlay span {
   color: #fff;
 }
 
@@ -1348,6 +1402,24 @@ button {
 
 
 /* 카카오 비즈니스 */
+/* 카카오 비즈니스 (오늘의집 프로모션) 모달 핏 설정 */
+.modal-dialog:has(img[src*="kakao"]) .modal-hero-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5 !important; /* 카드뉴스 4:5 비율로 고정 */
+  max-height: min(76vh, 820px);
+  background: #f7f8fb;
+}
+
+.modal-hero-media img[src*="kakao"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: contain; /* 잘림 없이 이미지 전체가 프레임에 딱 맞게 표시 */
+  object-position: center;
+}
 /* 세로형 배너 썸네일 영역에 이미지 꽉 차게 맞춤 */
 .banner-thumb-fit {
   width: 100%;
@@ -1361,6 +1433,167 @@ button {
   object-fit: cover; /* 이미지가 찌그러지지 않고 영역을 가득 채우도록 크롭 */
   object-position: center top; /* 이미지의 상단(타이틀 부분)이 먼저 보이도록 정렬 */
 }
+
+/* 청년 전·월세대출 가이드 (house) 모달 및 썸네일 핏 설정 */
+.cardnews-thumb:has(img[src*="house"]) .thumb-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  transform: none;
+}
+
+.cardnews-thumb:has(img[src*="house"]) .thumb-image img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* 모달 오픈 시 5:7 비율에 맞춰 잘림 없이 전체 표시 */
+.modal-dialog:has(img[src*="house"]) .modal-hero-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 7 !important; /* 이미지 실측 비율 (750x1060)에 맞춤 */
+  max-height: min(78vh, 840px);
+  background: #f7f8fb;
+}
+
+.modal-hero-media img[src*="house"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: contain; /* 이미지 전체가 모달 틀 안에 꽉 맞게 표시 */
+  object-position: center;
+}
+
+
+/* 오늘의집과 동일한 호버 확대 효과 */
+.cardnews-thumb.thumb-card:hover .thumb-image {
+  transform: none;
+}
+
+/* 모달 이미지 영역을 실제 이미지 비율에 맞춤 */
+.modal-dialog.modal-type-cardnews .modal-hero-wrap {
+  align-self: start;
+}
+
+.modal-dialog.modal-type-cardnews .modal-hero-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: auto !important;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.modal-dialog.modal-type-cardnews .modal-hero-media img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 페이지 숫자 숨김 */
+.modal-dialog.modal-type-cardnews .modal-page-indicator {
+  display: none !important;
+}
+/* 카드뉴스 모달: 고정 비율과 높이 제한 해제 */
+#portfolioModal .modal-type-cardnews #modalHeroMedia {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+/* 이미지 전체 표시 — 잘림·늘어짐 없이 원본 비율 유지 */
+#portfolioModal .modal-type-cardnews #modalHeroMedia > img {
+  position: static !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  margin: 0;
+  padding: 0;
+  transform: none !important;
+}
+/* 큰 이미지 영역만 줄여서 가운데 배치 */
+#portfolioModal .modal-type-cardnews .modal-hero-wrap {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* 원본 비율을 유지하며 화면 안에 이미지 전체 표시 */
+#portfolioModal .modal-type-cardnews #modalHeroMedia {
+  width: fit-content !important;
+  max-width: 100%;
+  height: auto !important;
+}
+
+#portfolioModal .modal-type-cardnews #modalHeroMedia > img {
+  width: auto !important;
+  height: auto !important;
+  max-width: min(100%, 400px) !important;
+  max-height: max(
+    80px,
+    calc(min(88dvh, 920px) - 120px)
+  ) !important;
+  object-fit: contain !important;
+}
+/* 왼쪽 화살표 */
+#portfolioModal .modal-type-cardnews .modal-nav-prev {
+  left: 0;
+}
+
+/* 오른쪽 화살표 */
+#portfolioModal .modal-type-cardnews .modal-nav-next {
+  right: 0;
+}
+
+/* 양쪽 화살표의 세로 위치 */
+#portfolioModal .modal-type-cardnews .modal-nav {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* 정확히 6장일 때: 기존 4열과 같은 크기로 3개씩 2줄 */
+#portfolioModal .modal-type-cardnews
+#modalThumbs:has(> :nth-child(6)):not(:has(> :nth-child(7))) {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  width: calc(75% - 3px);
+  justify-self: center;
+}
+
+
 
 
 /* ===== Modal gallery variants: poster / banner / cardnews ===== */
@@ -1473,7 +1706,7 @@ button {
 .modal-page-indicator {
   position: absolute;
   left: 50%;
-  bottom: 16px;
+  bottom: 9px;
   transform: translateX(-50%);
   z-index: 2;
   min-width: 82px;
@@ -1919,6 +2152,12 @@ template {
     }
 }
 
+
+
+
+
+
+
 @media (max-width: 760px) {
   :root {
     --container: min(100% - 28px, 100%);
@@ -2057,4 +2296,368 @@ template {
     font-size: 0.84rem;
     padding: 7px 12px;
   }
+}
+/* Section themes: edit these values independently. */
+#branding .theme-iocean {
+  --section-accent: #84758A;
+  --section-panel: #E8DFCF;
+  --section-label: #E4D9C9;
+  --section-text: #453E34;
+}
+#branding .theme-brand02 {
+  --section-accent: #737865;
+  --section-panel: #E8DFCF;
+  --section-label: #E4D9C9;
+  --section-text: #453E34;
+}
+#works .theme-promotion {
+  --section-accent: #737865;
+  --section-panel: #E4D9C9;
+  --section-label: #E8DFCF;
+  --section-text: #453E34;
+}
+#works .theme-video {
+  --section-accent: #84758A;
+  --section-panel: #E8DFCF;
+  --section-label: #E4D9C9;
+  --section-text: #453E34;
+}
+
+/* Only the supplied branding and work sections are affected. */
+:is(#branding, #works) .section-head h2 {
+  color: #453E34;
+}
+:is(#branding, #works) .section-theme .brand-info,
+:is(#branding, #works) .section-theme .work-row-head > div:first-child {
+  padding-left: 16px;
+  border-left: 4px solid var(--section-accent);
+}
+:is(#branding, #works) .section-theme .brand-info h3,
+:is(#branding, #works) .section-theme .brand-info p,
+:is(#branding, #works) .section-theme .work-row-head h3,
+:is(#branding, #works) .section-theme .work-row-head p,
+:is(#branding, #works) .section-theme .brand-slider-title {
+  color: var(--section-text);
+}
+:is(#branding, #works) .section-theme .thumb-overlay {
+  background: var(--section-panel);
+  color: var(--section-text);
+  transform: none;
+}
+:is(#branding, #works) .section-theme .thumb-overlay strong,
+:is(#branding, #works) .section-theme .thumb-overlay p {
+  color: var(--section-text);
+}
+:is(#branding, #works) .section-theme .thumb-overlay strong {
+  font-weight: 600;
+}
+:is(#branding, #works) .section-theme .thumb-overlay > span {
+  justify-self: start;
+  max-width: 100%;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border-left: 3px solid var(--section-accent);
+  background: var(--section-label);
+  color: var(--section-text);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* Brand cards: keep the 16:9 preview above the text, including on mobile. */
+#branding .section-theme .brand-thumb {
+  background: var(--section-panel);
+  aspect-ratio: auto;
+}
+#branding .section-theme .brand-thumb > a {
+  position: relative;
+  display: block;
+  padding-top: 56.25%;
+  height: 100%;
+}
+#branding .section-theme .brand-thumb > a > .thumb-overlay {
+  position: relative;
+  inset: auto;
+}
+#branding .section-theme .thumb-explanation {
+  height: auto;
+  min-height: 4.8em;
+  margin: 12px 0;
+}
+#branding .section-theme .skills-icon {
+  margin: 14px 0 0;
+}
+
+/* Section themes: edit these values independently. */
+#branding .theme-iocean {
+  --section-accent: #84758A;
+  --section-panel: #E8DFCF;
+  --section-label: #E4D9C9;
+  --section-text: #453E34;
+}
+#branding .theme-brand02 {
+  --section-accent: #737865;
+  --section-panel: #E8DFCF;
+  --section-label: #E4D9C9;
+  --section-text: #453E34;
+}
+#works .theme-promotion {
+  --section-accent: #737865;
+  --section-panel: #E4D9C9;
+  --section-label: #E8DFCF;
+  --section-text: #453E34;
+}
+#works .theme-video {
+  --section-accent: #84758A;
+  --section-panel: #E8DFCF;
+  --section-label: #E4D9C9;
+  --section-text: #453E34;
+}
+
+/* Only the supplied branding and work sections are affected. */
+:is(#branding, #works) .section-head h2 {
+  color: #453E34;
+}
+:is(#branding, #works) .section-theme .brand-info,
+:is(#branding, #works) .section-theme .work-row-head > div:first-child {
+  padding-left: 16px;
+  border-left: 4px solid var(--section-accent);
+}
+:is(#branding, #works) .section-theme .brand-info h3,
+:is(#branding, #works) .section-theme .brand-info p,
+:is(#branding, #works) .section-theme .work-row-head h3,
+:is(#branding, #works) .section-theme .work-row-head p,
+:is(#branding, #works) .section-theme .brand-slider-title {
+  color: var(--section-text);
+}
+:is(#branding, #works) .section-theme .thumb-overlay {
+  background: var(--section-panel);
+  color: var(--section-text);
+  transform: none;
+}
+:is(#branding, #works) .section-theme .thumb-overlay strong,
+:is(#branding, #works) .section-theme .thumb-overlay p {
+  color: var(--section-text);
+}
+:is(#branding, #works) .section-theme .thumb-overlay strong {
+  font-weight: 600;
+}
+:is(#branding, #works) .section-theme .thumb-overlay > span {
+  justify-self: start;
+  max-width: 100%;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border-left: 3px solid var(--section-accent);
+  background: var(--section-label);
+  color: var(--section-text);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+/* 슬라이더 화살표 버튼 기본 및 호버 색 반전 */
+:is(#branding, #works) .section-theme .slider-btn {
+  background: #E8DFCF;
+  border: 1px solid var(--section-accent);
+  color: #453E34;
+  transition: transform var(--transition), background-color var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition);
+}
+
+/* 호버 시: 각 섹션 고유 테마 컬러(보라 #84758A / 카키 #737865) 배경 + 흰색 화살표 */
+:is(#branding, #works) .section-theme .slider-btn:hover {
+  background-color: var(--section-accent) !important;
+  border-color: var(--section-accent) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(69, 62, 52, 0.16);
+}
+
+:is(#branding, #works) .section-theme .slider-btn:focus-visible {
+  outline: 2px solid var(--section-accent);
+  outline-offset: 3px;
+}
+
+
+
+
+/* Brand cards: keep the 16:9 preview above the text, including on mobile. */
+#branding .section-theme .brand-thumb {
+  background: var(--section-panel);
+  aspect-ratio: auto;
+}
+#branding .section-theme .brand-thumb > a {
+  position: relative;
+  display: block;
+  padding-top: 56.25%;
+  height: 100%;
+}
+#branding .section-theme .brand-thumb > a > .thumb-overlay {
+  position: relative;
+  inset: auto;
+}
+#branding .section-theme .thumb-explanation {
+  height: auto;
+  min-height: 4.8em;
+  margin: 12px 0;
+}
+#branding .section-theme .skills-icon {
+  margin: 14px 0 0;
+}
+/* 설명 영역을 밝은 크림색으로 */
+:is(#branding, #works) .section-theme .thumb-overlay {
+  background: #F5F1EA;
+}
+
+/* 영문 문구는 기존 포트폴리오 베이지 유지 */
+:is(#branding, #works) .section-theme .thumb-overlay > span {
+  background: #E8DFCF;
+  color: #453E34;
+}
+
+/* 브랜드 카드 바탕도 같은 크림색으로 */
+#branding .section-theme .brand-thumb {
+  background: #F5F1EA;
+}
+/* 카드 경계 구분 */
+:is(#branding, #works) .section-theme .thumb-card {
+  border: 1px solid rgba(132, 117, 138, 0.28);
+  box-shadow: 0 6px 18px rgba(69, 62, 52, 0.08);
+}
+
+/* 이미지와 설명 영역 사이 구분 */
+:is(#branding, #works) .section-theme .thumb-overlay {
+  border-top: 1px solid #E4D9C9;
+}
+/* 카드뉴스: 이미지와 설명을 위아래로 분리 */
+#visualTrack > .cardnews-thumb {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: auto;
+}
+
+/* 이미지 영역 */
+#visualTrack > .cardnews-thumb .thumb-image {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: auto !important; /* 고정 비율을 풀어 이미지 높이에 맞춤 */
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+#visualTrack > .cardnews-thumb .thumb-image img {
+  position: static !important; /* absolute 해제 */
+  display: block !important;
+  width: 100% !important;
+  height: auto !important; /* 원본 비율대로 높이 자동 계산 */
+  max-width: 100% !important;
+  max-height: none !important;
+  object-fit: fill !important;
+  transform: none !important;
+}/* 3. 오늘의집 중복 이미지 중 첫 번째 장만 노출 */
+#visualTrack > .cardnews-thumb .banner-thumb-fit img:not(:first-child) {
+  display: none !important;
+}
+
+/* 설명은 이미지 아래에 배치 */
+#works #visualTrack > .cardnews-thumb .thumb-overlay {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  flex: 1;
+  transform: none;
+}
+/* 세로 영상 비율 */
+#videoTrack > .reels-thumb {
+  --video-ratio: 9 / 16;
+}
+
+/* 가로 영상 비율 */
+#videoTrack > .horizontal-thumb {
+  --video-ratio: 16 / 9;
+}
+
+/* 카드 전체가 아닌 영상 영역에만 비율 적용 */
+#videoTrack > .reels-thumb:not(.horizontal-thumb),
+#videoTrack > .reels-thumb.horizontal-thumb {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  aspect-ratio: auto;
+}
+
+/* 영상 전체 표시 */
+#videoTrack > .reels-thumb > .thumb-video {
+  grid-column: 1;
+  grid-row: 1;
+
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--video-ratio);
+  object-fit: contain;
+  object-position: center;
+  background: #F5F1EA;
+  transform: none;
+}
+
+/* 호버할 때 확대되어 잘리는 현상 방지 */
+#videoTrack > .reels-thumb:hover > .thumb-video {
+  transform: none;
+}
+
+/* 재생 버튼은 영상 영역 가운데 유지 */
+#videoTrack > .reels-thumb > .thumb-play-button {
+  grid-column: 1;
+  grid-row: 1;
+
+  position: relative;
+  inset: auto;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  transform: none;
+}
+
+/* 설명 영역을 영상 아래로 분리 */
+#works #videoTrack > .reels-thumb > .thumb-overlay {
+  grid-column: 1;
+  grid-row: 2;
+
+  position: relative;
+  inset: auto;
+  width: 100%;
+  min-width: 0;
+  align-content: start;
+  transform: none;
+}/* 아이오션 제목 */
+#branding .theme-iocean .brand-info h3 {
+  color: #84758A;
+}
+
+/* 두 번째 브랜드 제목 */
+#branding .theme-brand02 .brand-info h3 {
+  color: #737865;
+}
+
+/* Card News · Promotion 제목 */
+#works .theme-promotion .work-row-head h3 {
+  color: #737865;
+}
+
+/* Reels & Videos 제목 */
+#works .theme-video .work-row-head h3 {
+  color: #84758A;
+}/* 브랜딩 카드 설명 박스 */
+#branding .section-theme .thumb-overlay {
+  /* background: rgba(132, 117, 138, 0.12); */
+  border-top: 1px solid rgba(132, 117, 138, 0.25);
+}
+
+/* 글자는 선명하게 유지 */
+#branding .section-theme .thumb-overlay strong,
+#branding .section-theme .thumb-overlay p,
+#branding .section-theme .thumb-overlay > span {
+  color: #453E34;
 }
