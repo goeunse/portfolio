@@ -2661,3 +2661,15 @@ template {
 #branding .section-theme .thumb-overlay > span {
   color: #453E34;
 }
+
+
+/* 썸네일 크기 통일 및 잘림/여백 방지 코드 */
+#visualTrack > .cardnews-thumb .thumb-image {
+  aspect-ratio: 4 / 5 !important; /* 모든 카드의 이미지 영역을 4:5 동일 비율로 강제 고정 */
+  height: 100% !important; /* 높이가 들쭉날쭉해지는 것을 방지 */
+}
+
+#visualTrack > .cardnews-thumb .thumb-image img {
+  height: 100% !important;
+  object-fit: fill !important; /* 원본 비율이 달라도 잘림이나 여백 없이 강제로 틀에 꽉 채움 */
+}
