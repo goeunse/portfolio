@@ -2673,3 +2673,98 @@ template {
   height: 100% !important;
   object-fit: fill !important; /* 원본 비율이 달라도 잘림이나 여백 없이 강제로 틀에 꽉 채움 */
 }
+
+/* 브랜딩 카드 설명 높이 통일 (ODDi 4줄 텍스트 기준 높이 맞춤) */
+#branding .section-theme .thumb-explanation {
+  min-height: 6.6em; /* 4줄 텍스트가 모두 여유 있게 들어가는 높이 */
+  margin: 12px 0 16px;
+  line-height: 1.6;
+}
+
+/* 설명 상자 내부를 flex로 정렬하여 하단 뱃지와 아이콘 라인 일직선 고정 */
+#branding .section-theme .thumb-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* 뱃지(Brand Strategy 등) 상단 여백 정리 */
+#branding .section-theme .thumb-overlay > span {
+  margin-top: auto; /* 텍스트 줄 수가 달라도 항상 같은 하단 위치로 정렬 */
+  margin-bottom: 12px;
+}
+
+/* 스킬 아이콘 박스 하단 고정 */
+#branding .section-theme .skills-icon {
+  margin-top: 0;
+}
+
+/* ===================================================
+   피규어 모달 메인 사진(빨간 체크 영역) 확대 코드
+   =================================================== */
+
+/* 1. 400px로 묶여있던 이미지 감싸는 박스를 100%로 해제 */
+#portfolioModal .modal-type-cardnews:has(img[src*="figure"]) .modal-hero-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+/* 2. 메인 사진 틀을 16:9 가로 비율로 넓게 확장 */
+#portfolioModal .modal-type-cardnews:has(img[src*="figure"]) #modalHeroMedia {
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+}
+
+/* 3. [핵심] 400px 강제 제한을 깨고 사진을 큼직하게 100% 채움 */
+#portfolioModal .modal-type-cardnews:has(img[src*="figure"]) #modalHeroMedia > img {
+  width: 100% !important;
+  max-width: 100% !important; /* 기존 400px 제한 해제 */
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: contain !important;
+}
+
+/* 4. 사진이 더 시원하게 커지도록 좌측 영역 비율 및 팝업창 폭 넓히기 */
+#portfolioModal:has(img[src*="figure"]) .modal-dialog {
+  width: min(1200px, 95%) !important;
+}
+
+#portfolioModal:has(img[src*="figure"]) .modal-content {
+  grid-template-columns: minmax(0, 1.4fr) minmax(320px, 0.85fr) !important;
+  gap: 32px !important;
+}
+/* ===================================================
+   피규어 카드 썸네일 박스 가로 확장 및 비율 완벽 맞춤
+   =================================================== */
+
+/* 1. 카드의 전체 너비를 16:9 비율에 맞춰 가로로 확장 (다른 4:5 카드와 세로 높이 완벽 일치) */
+#visualTrack > .cardnews-thumb:has(img[src*="figure"]) {
+  width: calc(min(280px, 24vw) * (5 / 4) * (16 / 9)) !important; /* 약 2.22배 가로로 확장 */
+  max-width: none !important;
+  flex: 0 0 auto !important;
+}
+
+/* 2. 4:5로 묶여있던 썸네일 이미지 틀을 16:9 가로 비율로 해제 및 변경 */
+#visualTrack > .cardnews-thumb:has(img[src*="figure"]) .thumb-image {
+  aspect-ratio: 16 / 9 !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* 3. 이미지가 찌그러지거나 잘리지 않고 원본 그대로 틀에 빈틈없이 딱 맞게 표시 */
+#visualTrack > .cardnews-thumb:has(img[src*="figure"]) .thumb-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* 남거나 잘리는 공간 없이 16:9 틀에 꽉 채움 */
+  transform: none !important;
+}
+
+/* 모바일 화면 대응 */
+@media (max-width: 760px) {
+  #visualTrack > .cardnews-thumb:has(img[src*="figure"]) {
+    width: 86% !important;
+  }
+}
